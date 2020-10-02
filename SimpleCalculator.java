@@ -131,7 +131,7 @@ SimpleCalculator()
 }
 public void actionPerformed(ActionEvent e)
 {
-	System.out.println(e.getActionCommand());
+	System.out.println(e.getActionCommand());				// To Keep a track of what you have entered
 	if(e.getActionCommand().equals("="))
 	{
 		tf1.setText(tf1.getText()+" = "+cal(tf1.getText()));
