@@ -108,7 +108,7 @@ SimpleCalculator()
 	frame.add(bd);
 	bd.addActionListener(this);
 	
-	bc = new JButton("C");
+	bc = new JButton("AC");
 	bc.setBounds(240,0,80,49);
 	bc.setFont(new Font("Arial", Font.PLAIN, 25));
 	frame.add(bc);
@@ -137,7 +137,7 @@ public void actionPerformed(ActionEvent e)
 		tf1.setText(tf1.getText()+" = "+cal(tf1.getText()));
 		
 	}
-	else if(e.getActionCommand().equals("C"))
+	else if(e.getActionCommand().equals("AC"))
 	{
 		tf1.setText(null);
 	}
