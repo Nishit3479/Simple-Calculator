@@ -122,6 +122,7 @@ SimpleCalculator()
 	
 	tf1 = new JTextField(20);
 	tf1.setBounds(0,0,240,50);
+	tf1.setFont(new Font("Arial", Font.PLAIN, 20));
 	frame.add(tf1);
 	tf1.setVisible(true);
 
