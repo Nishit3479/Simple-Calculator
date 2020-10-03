@@ -131,7 +131,7 @@ SimpleCalculator()
 }
 public void actionPerformed(ActionEvent e)
 {
-	System.out.println(e.getActionCommand());				// To Keep a track of what you have entered
+	System.out.println(e.getActionCommand());
 	if(e.getActionCommand().equals("="))
 	{
 		tf1.setText(tf1.getText()+" = "+cal(tf1.getText()));
@@ -180,7 +180,40 @@ public static String cal(String str)
     else if (s3.equals("÷"))
        result = (Double.parseDouble(s1) / Double.parseDouble(s2));
     else
-       result = (Double.parseDouble(s1) * Double.parseDouble(s2));          
-    return ""+result;
+       result = (Double.parseDouble(s1) * Double.parseDouble(s2));
+    String r = Double.toString(result);
+    int c=0;
+    for(int i=0; i<r.length();i++)
+    {
+    	int p = r.charAt(i);
+    	if(p == '.')
+    	{
+    		break;
+    	}
+    	c++;
+    }
+    int a=0;
+    for(int i=c+1; i<r.length();i++)
+    {
+    	int p = r.charAt(i);
+    	if(p == '0')
+    	{
+    		continue;
+    	}
+    	else
+    	{
+    		a=1;
+    		break;
+    	}
+    }
+    if(a == 1)
+    {
+    	return r;
+    }
+    else
+    {
+    	int res = (int)result;
+    	return ""+res;
+    }
 }
 }
