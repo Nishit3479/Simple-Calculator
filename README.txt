@@ -3,7 +3,7 @@ A Simple Calculator using Java Swing
 
 The provided file contains the code to make a Simple Calculator using Java Swing.
 The Simple Calculator is capable of solving single operator single operations for all numbers (including numbers with decimal values).
-The line 134 is optional as it is only used to keep a track of what you have typed.
+The line 171 is optional as it is only used to keep a track of what you have typed.
 It is advised to use an IDE to execute the following code.
 
 Any doubt or problem regarding the code?
